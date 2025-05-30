@@ -29,6 +29,9 @@
 			"environment": "client"
 		}
 	],
+	"fabric-datagen": [ 
+	      "com.anculamod.dataEntryPoint.RefDataGenerator"
+	    ],
 	"depends": {
 		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.21.5",
