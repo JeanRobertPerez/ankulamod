@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ankulamod",
+	"version": "0.1",
+	"name": "Ankulamod",
+	"description": "AAAAAAAAAAAAAAAAAAAAAAA",
+	"authors": [
+		"JeanRobertPerez"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://https://github.com/JeanRobertPerez/ankulamod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ankulamod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ankulamod.Ankulamod"
+		],
+		"client": [
+			"com.ankulamod.AnkulamodClient"
+		]
+	},
+	"mixins": [
+		"ankulamod.mixins.json",
+		{
+			"config": "ankulamod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
